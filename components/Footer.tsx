@@ -72,10 +72,10 @@ export async function Footer() {
           <ul className="space-y-2.5 text-xs text-slate-400">
             <li>
               <a
-                href="mailto:hello@3dwolf.example"
+                href="mailto:3ddirk@3dwolf.be"
                 className="tracking-wide hover:text-cyan-300 transition-colors"
               >
-                hello@3dwolf.example
+                3ddirk@3dwolf.be
               </a>
             </li>
             <li className="text-slate-500">Social channels coming soon</li>
