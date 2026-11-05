@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import Link from "next/link";
 import { WolfScrollCanvas } from "@/components/WolfScrollCanvas";
 
 export function Hero() {
@@ -30,9 +31,7 @@ export function Hero() {
               </span>
 
               {/* Glowing Double Slash // */}
-              <span className="inline-flex items-center text-cyan-400 text-cyber-glow-strong font-mono font-bold tracking-tight mx-0.5 sm:mx-1 drop-shadow-[0_0_18px_rgba(34,211,238,0.95)]">
-                //
-              </span>
+              <span className="inline-flex items-center text-cyan-400 text-cyber-glow-strong font-mono font-bold tracking-tight mx-0.5 sm:mx-1 drop-shadow-[0_0_18px_rgba(34,211,238,0.95)]">{"//"}</span>
 
               <span className="text-white text-cyber-glow">
                 THE
@@ -53,8 +52,8 @@ export function Hero() {
 
           {/* Call to Action: Explore the Den */}
           <div className="mt-7 sm:mt-8 md:mt-9 flex justify-center">
-            <a
-              href="#explore"
+            <Link
+              href="/labs"
               className="group relative inline-flex items-center gap-2.5 px-6 sm:px-7 py-2.5 rounded-full border border-white/25 hover:border-cyan-400/80 bg-white/[0.04] hover:bg-cyan-950/30 backdrop-blur-md transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.4)] hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] cursor-pointer"
             >
               {/* Slashed Circle / Compass Icon */}
@@ -77,7 +76,7 @@ export function Hero() {
               <span className="text-[10px] sm:text-[11px] font-semibold tracking-[0.24em] text-slate-200 group-hover:text-white uppercase transition-colors">
                 EXPLORE THE DEN
               </span>
-            </a>
+            </Link>
           </div>
         </div>
 
